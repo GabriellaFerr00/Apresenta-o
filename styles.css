@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body{
+    background: url(./fundo.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a:hover {
+    color:#66c3e7;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.container .name h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.container #About p{
+    font-size: 19px;
+    margin: 20px;
+
+}
+
+.container .name h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#arrow {
+    font-size: 20px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+    margin-block-end: 15px;
+}
+
+.contato {
+    color: #000000;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+.rotation {
+    transform: rotate(180deg);
+    transition: 300ms;;
+}
+
+.active {
+    display: block !important;
+}
+
+.form {
+    width: 40%; 
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background:  linear-gradient(to right, #054f77 50%, #66c3e7 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:#000000;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 7px 7px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color:#FFF;
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5{
+        font-size: 15px;
+    }
+
+    .container #About p{
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
